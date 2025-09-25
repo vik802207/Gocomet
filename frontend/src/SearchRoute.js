@@ -8,7 +8,7 @@ export default function SearchRoute(){
 
   const search = async () => {
     const q = new URLSearchParams({ origin, destination, date });
-    const res = await fetch(`http://localhost:8000/api/flights/route?${q.toString()}`);
+    const res = await fetch(`https://gocomet.onrender.com/api/flights/route?${q.toString()}`);
     const json = await res.json();
     setResult(json);
   };

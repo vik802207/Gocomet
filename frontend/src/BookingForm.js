@@ -10,7 +10,7 @@ export default function BookingForm() {
 
   const submit = async () => {
     try {
-      const res = await fetch('http://localhost:8000/api/bookings', {
+      const res = await fetch('https://gocomet.onrender.com/api/bookings', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ origin, destination, pieces, weight_kg: weight })

@@ -5,26 +5,26 @@ export default function TrackBooking(){
   const [booking,setBooking]=useState(null);
 
   const get = async () => {
-    const res = await fetch(`http://localhost:8000/api/bookings/${ref}`);
+    const res = await fetch(`https://gocomet.onrender.com/api/bookings/${ref}`);
     if (res.status===404) { setBooking({ error:'Not found' }); return; }
     const json = await res.json();
     setBooking(json);
   };
 
   const depart = async () => {
-    await fetch(`http://localhost:8000/api/bookings/${ref}/depart`, {
+    await fetch(`https://gocomet.onrender.com/api/bookings/${ref}/depart`, {
       method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({ location: booking.origin })
     });
     get();
   };
   const arrive = async () => {
-    await fetch(`http://localhost:8000/api/bookings/${ref}/arrive`, {
+    await fetch(`https://gocomet.onrender.com/api/bookings/${ref}/arrive`, {
       method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({ location: booking.destination })
     });
     get();
   };
   const cancel = async () => {
-    await fetch(`http://localhost:8000/api/bookings/${ref}/cancel`, {
+    await fetch(`https://gocomet.onrender.com/api/bookings/${ref}/cancel`, {
       method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({ note: 'Cancelled via UI' })
     });
     get();
