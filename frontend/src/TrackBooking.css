@@ -1,0 +1,95 @@
+.track-container {
+    width: 35%;
+    margin: 40px auto;   /* centers horizontally */
+    padding: 25px 30px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.track-container h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.track-container input {
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  margin-right: 10px;
+  flex: 1;
+}
+
+.track-container input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0,123,255,0.5);
+  outline: none;
+}
+
+.track-container button {
+  padding: 12px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.track-container button:hover {
+  background-color: #0056b3;
+  transform: scale(1.03);
+}
+
+.track-container .booking-info {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+}
+
+.track-container .booking-info p {
+  margin: 5px 0;
+  font-size: 15px;
+}
+
+.track-container h4 {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  color: #555;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+}
+
+.track-container ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 0;
+}
+
+.track-container li {
+  margin-bottom: 8px;
+  padding: 8px 12px;
+  background-color: #eef6ff;
+  border-left: 4px solid #007bff;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.track-container .action-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.track-container .error {
+  margin-top: 15px;
+  color: #c00;
+  font-weight: bold;
+  text-align: center;
+}

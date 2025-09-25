@@ -1,0 +1,65 @@
+.admin-dashboard {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  color: #000000;
+  font-family: "Poppins", sans-serif;
+}
+
+.admin-dashboard h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  background: linear-gradient(90deg, #ff7eb3, #ff758c, #ff9a8b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.admin-dashboard input {
+  width: 90%;
+  padding: 12px 15px;
+  margin: 12px 0;
+  border: none;
+  border-radius: 12px;
+  font-size: 15px;
+  background: rgba(1, 12, 38, 0.12);
+  color: #140eb0;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.admin-dashboard input::placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.admin-dashboard input:focus {
+  background: rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 8px #ff7eb3, 0 0 15px #ff758c;
+}
+
+.admin-dashboard button {
+  width: 50%;
+  padding: 14px;
+  margin-top: 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #000000;
+  background: linear-gradient(90deg, #ff7eb3, #ff758c, #ff9a8b);
+  background-size: 200% auto;
+  transition: all 0.3s ease;
+}
+
+.admin-dashboard button:hover {
+  background-position: right center;
+  box-shadow: 0 0 25px hsl(0, 0%, 3%), 0 0 45px #ff9a8b;
+  transform: translateY(-2px);
+}

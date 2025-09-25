@@ -1,0 +1,85 @@
+.search-container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 25px 30px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.search-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.search-container .search-inputs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.search-container input,
+.search-container button {
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.search-container input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0,123,255,0.5);
+  outline: none;
+}
+
+.search-container input[type="date"] {
+  padding: 10px;
+}
+
+.search-container button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.search-container button:hover {
+  background-color: #0056b3;
+  transform: scale(1.02);
+}
+
+/* Results */
+.search-container h3 {
+  margin-top: 25px;
+  color: #555;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 6px;
+}
+
+.flight-card, .transit-card {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-top: 10px;
+  background-color: #f9f9f9;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.flight-card:hover, .transit-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.transit-card div {
+  margin-bottom: 6px;
+}
+
+.no-flights {
+  font-style: italic;
+  color: #999;
+  margin-top: 6px;
+}

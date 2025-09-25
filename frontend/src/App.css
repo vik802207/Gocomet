@@ -1,0 +1,283 @@
+/* App container */
+.app-container {
+  padding: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #e8f0f8;
+  min-height: 100vh;
+}
+
+.app-container h1 {
+  text-align: center;
+  color: #007bff;
+  margin-bottom: 40px;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+}
+
+/* Blocks layout */
+.blocks-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* General Card Style */
+.block {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 12px 25px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  overflow: hidden;
+}
+
+.block:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 35px rgba(0,0,0,0.15);
+}
+
+/* Card header */
+.block .card-header {
+  padding: 15px 20px;
+  background: linear-gradient(135deg, #007bff, #00c6ff);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+/* Card content */
+.block .card-content {
+  padding: 20px;
+}
+
+/* Row for Booking + Track */
+.block-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Each block width */
+.block-row .block {
+  flex: 1 1 48%;
+  min-width: 300px;
+}
+
+/* Inputs and buttons inside cards */
+.block input,
+.block select,
+.block button {
+  padding: 12px 14px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  transition: 0.3s;
+}/* General body */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f4f8;
+}
+
+/* Header */
+header {
+  background-color: #1e40af; /* deep blue */
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Sidebar */
+nav {
+  background-color: #e2e8f0; /* light gray */
+  min-width: 220px;
+  padding: 2rem 1rem;
+  height: calc(100vh - 120px); /* header + footer height */
+  overflow-y: auto;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  margin-bottom: 1rem;
+}
+
+nav a {
+  display: block;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  color: #1e3a8a;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+nav a:hover {
+  background-color: #93c5fd;
+  color: #1e40af;
+}
+
+nav a.active, nav a.bg-blue-300 {
+  background-color: #3b82f6;
+  color: white;
+  font-weight: bold;
+}
+
+/* Main content */
+main {
+  flex: 1;
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+/* Cards inside main (Search / Booking / Track) */
+.main-card {
+  background-color: white;
+  border-radius: 15px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.main-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 35px rgba(0,0,0,0.15);
+}
+
+.main-card h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #1e3a8a;
+  font-size: 1.3rem;
+}
+
+/* Footer */
+footer {
+  background-color: #cbd5e1; /* soft gray */
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #1e3a8a;
+}
+
+/* Scrollbar hide */
+main::-webkit-scrollbar {
+  display: none;
+}
+main {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .flex {
+    flex-direction: column;
+  }
+  nav {
+    height: auto;
+    width: 100%;
+  }
+}
+.button-row {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.action-button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  color: white;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.action-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(135deg, #2575fc, #6a11cb);
+}
+
+.action-button:active {
+  transform: scale(0.95);
+}
+
+
+
+.block input:focus,
+.block select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0,123,255,0.4);
+  outline: none;
+}
+
+.block button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.block button:hover {
+  background-color: #0056b3;
+  transform: scale(1.02);
+}
+
+/* Flight and transit cards */
+.flight-card,
+.transit-card,
+.booking-info li {
+  background-color: #f0f8ff;
+  border-left: 4px solid #007bff;
+  border-radius: 8px;
+  padding: 10px 12px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  transition: transform 0.2s;
+}
+
+.flight-card:hover,
+.transit-card:hover,
+.booking-info li:hover {
+  transform: translateY(-2px);
+}
+
+/* Timeline list */
+.booking-info ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+/* Error messages */
+.error {
+  color: #c00;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* No flights message */
+.no-flights {
+  font-style: italic;
+  color: #999;
+  margin-top: 6px;
+}
