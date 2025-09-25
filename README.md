@@ -28,6 +28,43 @@ manage flight schedules**.
     -   View full booking history with timeline events
 -   **Tracking**
     -   Search by `ref_id` to view current status + full event timeline
+---
+
+To **add a new flight**:
+
+1. Login as admin.
+2. Navigate to `/admin` in the browser or click "Admin Dashboard".
+3. Fill in the flight details:
+
+   - Flight Number  
+   - Airline Name  
+   - Origin  
+   - Destination  
+   - Departure Date & Time  
+   - Arrival Date & Time  
+
+4. Click **Add Flight**.  
+5. The data will be sent to the backend: `POST /flights`  
+   - **Endpoint:** `https://gocomet.onrender.com/flights`  
+   - **Headers:**  
+     ```json
+     {
+       "Content-Type": "application/json",
+       "Authorization": "Bearer <admin-token>"
+     }
+     ```
+   - **Body Example:**
+     ```json
+     {
+       "flightNumber": "AI101",
+       "airlineName": "Air India",
+       "origin": "DEL",
+       "destination": "BLR",
+       "departureDatetime": "2025-09-25T10:00",
+       "arrivalDatetime": "2025-09-25T12:30"
+     }
+     ```
+6. On success, an alert "Flight added successfully!" will appear.
 
 ------------------------------------------------------------------------
 
