@@ -10,8 +10,8 @@ manage flight schedules**.
 ------------------------------------------------------------------------
 
 ## 🔗 Live Links
-- 🌐 **Frontend (Netlify):** [https://dazzling-centaur-c36e97.netlify.app/](https://dazzling-centaur-c36e97.netlify.app/)
-- ⚙️ **Backend (Render):** [https://av-vrp5.onrender.com/](https://av-vrp5.onrender.com/)
+- **Frontend:** [https://gocomet-s5gx.vercel.app/](https://gocomet-s5gx.vercel.app/)  
+- **Backend:** [https://gocomet.onrender.com/](https://gocomet.onrender.com/)
 
 ---
 
