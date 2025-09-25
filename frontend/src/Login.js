@@ -22,7 +22,7 @@ function Login() {
       if (data.role === "admin") {
         navigate("/admin");
       } else {
-        navigate("/");
+        navigate("/home");
       }
     } else {
       alert(data.error || "Login failed");

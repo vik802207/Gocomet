@@ -46,11 +46,11 @@ function App() {
       <div className="app-container">
         <h1>Air Cargo — Demo</h1>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/booking" element={<BookingForm />} />
           <Route path="/track" element={<TrackBooking />} />
            <Route path="/login" element={<Login />} />
-            <Route path="/signup" element={<Signup />} />
+            <Route path="/" element={<Signup />} />
           <Route path="/admin" element={<AdminDashboard />} />
         </Routes>
       </div>
